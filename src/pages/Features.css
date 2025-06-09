@@ -1,0 +1,104 @@
+/* Base Styles */
+.features-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.features-header h1 {
+  font-size: 44px;
+  color: #303030;
+  margin-bottom: 1rem;
+}
+
+.features-header p {
+  font-size: 18px;
+  color: #7E7E7E;
+  margin-bottom: 3rem;
+}
+
+/* Grid Layout */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; /* Added some gap for breathing space */
+  align-items: center;
+}
+
+.feature-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  margin-bottom: 0;
+}
+
+.feature-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.feature-text {
+  padding: 0; /* Keep zero padding */
+  margin-top: 0; /* No extra margin */
+  align-self: flex-start;
+  text-align: left; /* Better readability for paragraphs */
+}
+
+.feature-text h3 {
+  font-size: 24px;
+  color: #303030;
+  margin-bottom: 0.5rem;
+}
+
+.feature-text p {
+  color: #7E7E7E;
+  line-height: 1.6;
+}
+
+/* Responsive for medium screens */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .feature-item {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  .feature-image-container {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .feature-text {
+    text-align: center;
+  }
+}
+
+/* Responsive for smaller phones */
+@media (max-width: 768px) {
+  .features-header h1 {
+    font-size: 2rem;
+  }
+
+  .features-header p {
+    font-size: 1.1rem;
+  }
+
+  .feature-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .feature-text p {
+    font-size: 1rem;
+  }
+
+  .feature-image-container {
+    height: auto;
+  }
+}

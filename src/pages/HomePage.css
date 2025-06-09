@@ -1,0 +1,19 @@
+/* Reset parent containers (add to global CSS or top of homepage.css) */
+body, html, #root, .content {
+  margin: 0;
+  padding: 0;
+  scroll-snap-type: y proximity;
+}
+
+/* Tighten section spacing */
+.page-section {
+  min-height: 100vh;
+  padding: 0.5rem 2rem; /* Reduced top/bottom padding (from 2rem) */
+  scroll-snap-align: start;
+  margin: 0; /* Remove default margins */
+}
+
+/* Optional: Remove gap between snap sections */
+.content {
+  scroll-padding: 0; /* Prevents snap offset */
+}

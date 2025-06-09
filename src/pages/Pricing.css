@@ -1,0 +1,197 @@
+/* Base Styles */
+.pricing-section {
+  width: 100%;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Top Section */
+.top-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.text-content h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 16px;
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Image */
+.image-content {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3rem;
+}
+
+.security-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  margin-right: 2rem;
+  transform: translateX(20px);
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background-color: #eaeaea;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+/* Bottom Section */
+.bottom-section {
+  text-align: center;
+}
+
+.bottom-section h2 {
+  margin-top: 5rem;
+  font-size: 36px;
+  color: #303030;
+  margin-bottom: 1.5rem;
+}
+
+.bottom-section p {
+  font-size: 18px;
+  color: #7E7E7E;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #4CA64C;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  margin-bottom: 3rem;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #3e8c3e;
+}
+
+/* Responsive: Tablets */
+@media (max-width: 1024px) {
+  .top-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .image-content {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .security-image {
+    margin: 0 auto 2rem;
+    max-height: 300px;
+    transform: none;
+  }
+
+  .text-content h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .subtitle {
+    text-align: center;
+  }
+
+  .features-list li {
+    font-size: 15px;
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+/* Responsive: Phones */
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .text-content h1 {
+    font-size: 1.75rem;
+  }
+
+  .subtitle,
+  .bottom-section p {
+    font-size: 1rem;
+  }
+
+  .features-list li {
+    font-size: 14px;
+    gap: 0.75rem;
+  }
+
+  .bottom-section h2 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Responsive: Small Phones */
+@media (max-width: 480px) {
+  .text-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .bottom-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    font-size: 0.95rem;
+    padding: 0.9rem;
+  }
+}

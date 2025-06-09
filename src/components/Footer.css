@@ -1,0 +1,465 @@
+/* Footer.css */
+.footer {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 40px 50px;
+  font-family: 'General Sans', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-content {
+  margin-bottom: 0; /* or reduce it */
+}
+
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.logo-image {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  align-self: flex-start;
+}
+
+.footer-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+}
+
+.contact-info {
+  flex: 1.5;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #7E7E7E;
+  cursor: pointer;
+  transition: color 0.3s;
+  line-height: 1.5;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+  display: inline-block;
+  padding: 2px 0;
+}
+
+.footer-links a:hover {
+  color: #4CA64C;
+}
+.footer-links button {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+
+.footer-links button:hover {
+  color: #4CA64C;
+}
+
+.contact-item {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #000000 !important;
+}
+
+.contact-icon {
+  font-weight: bold;
+  width: 20px;
+  display: inline-block;
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: #E0E0E0;
+  margin: 20px 0;
+  border: none;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.copyright {
+  font-size: 14px;
+  color:#303030;
+}
+
+.social-links {
+  display: flex;
+  gap: 24px;
+}
+
+.social-links a {
+  color: #303030;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #4CA64C;
+}
+
+/* Responsive adjustments */
+/* Tablet and smaller */
+@media (max-width: 768px) {
+  .footer {
+    background: #f9f9f9; /* subtle off-white for depth */
+    padding: 35px 30px;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,0.05);
+  }
+
+  .footer-top {
+    gap: 20px; /* slightly tighter */
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+  }
+
+  .footer-columns {
+    gap: 20px;
+    flex-direction: column;
+    padding: 0; /* flush left */
+  }
+
+  .footer-column {
+    min-width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+  }
+
+  .footer-column:last-child {
+    border-bottom: none;
+  }
+
+  .footer-links li {
+    margin-bottom: 12px;
+  }
+
+  .footer-links a,
+  .footer-links button {
+    font-size: 17px;
+    padding: 10px 0;
+    display: block;
+    text-align: left;
+  }
+
+  .footer-links a:hover,
+  .footer-links button:hover {
+    color: #4CA64C;
+  }
+  
+  /* Legals Section */
+  .legals {
+    background: #f9f9f9;
+    padding: 30px 30px 25px;
+    box-shadow: inset 0 1px 4px rgba(0,0,0,0.05);
+  }
+
+  .legals-top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+  }
+
+  .legals-logo {
+    width: 200px;
+    margin: 0 auto 15px auto; /* centered */
+    display: block;
+  }
+
+  .legals-content {
+    text-align: left;
+    padding: 0;
+  }
+
+  .legals-links {
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .legals-links a,
+  .legals-links button {
+    font-size: 16px;
+    padding: 8px 0;
+    display: block;
+    color: #303030;
+    text-align: left;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .legals-links a:hover,
+  .legals-links button:hover {
+    color: #4CA64C;
+    background-color: #e6f2e6;
+  }
+
+  .legals-bottom {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  /* Smaller social media for legals */
+  .social-links.legals-social {
+    gap: 14px;
+  }
+
+  .social-links.legals-social a {
+    font-size: 14px;    /* smaller font */
+    padding: 4px 6px;   /* smaller padding */
+    display: inline-block;
+  }
+
+  .social-links.legals-social a:hover {
+    background-color: #d0eaff;
+    color: #4CA64C;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+
+  .contact-item {
+    margin-bottom: 14px;
+    gap: 10px;
+    justify-content: flex-start;
+    color: #000000 !important;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    align-items: flex-start;
+  }
+
+  .social-links {
+    gap: 10px;
+  }
+
+  .social-links a {
+    font-size: 10px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .footer {
+    background: #ffffff;
+    padding: 10px 5px 20px 5px; /* reduced top padding */
+    margin-top: 0; /* ensure there's no extra margin */
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  /* Center and enlarge the logo */
+  .logo-image {
+    display: block;
+    width: 160px;  /* bigger */
+    margin: 0 auto 12px auto; /* centered, less bottom space */
+  }
+
+  /* Headings start left, smaller margin bottom */
+  .footer-heading {
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #303030;
+    text-align: left;
+  }
+
+  /* Footer columns start fully left with no side padding */
+  .footer-columns {
+    flex-direction: column;
+    gap: 12px;
+    padding: 0; /* remove horizontal padding */
+  }
+
+  .footer-column {
+    min-width: 100%;
+    padding: 0 0 12px 0; /* only bottom padding */
+    border-bottom: 1px solid #eee;
+  }
+
+  .footer-column:last-child {
+    border-bottom: none;
+  }
+
+  /* Links aligned left, smaller spacing */
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+
+  .footer-links a,
+  .footer-links button {
+    font-size: 16px;
+    padding: 8px 0;
+    display: block;
+    border-radius: 4px;
+    text-align: left;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+  .footer-links a:hover,
+  .footer-links button:hover {
+    background-color: #e0f2ff;
+    color: #4CA64C;
+  }
+
+  /* Contact info aligned left, no padding on sides */
+  .contact-info {
+    width: 100%;
+    margin-top: 15px;
+    padding: 0 0 15px 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .contact-item {
+    margin-bottom: 12px;
+    gap: 10px;
+    justify-content: flex-start;
+    color: #000000 !important;
+  }
+
+  /* Footer bottom aligned left, less gap */
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    border-radius: 0;
+  }
+
+  /* Smaller gap for social links */
+  .social-links {
+    gap: 12px;
+  }
+
+  .social-links a {
+    font-size: 13px;
+    padding: 6px;
+    border-radius: 6px;
+  }
+  .social-links a:hover {
+    background-color: #d0eaff;
+    color: #4CA64C;
+  }
+  
+  /* Legals Section */
+  .legals {
+    background: #fff;
+    padding: 25px 15px;
+  }
+
+
+  .legals-links {
+    flex-direction: column;
+    text-align: left; 
+    gap: 10px;
+    padding: 0;
+  }
+
+  .legals-links a,
+  .legals-links button {
+    font-size: 15px;
+    padding: 10px 0;
+    display: block;
+    text-align: left;
+    border-radius: 3px;
+  }
+
+  .legals-links a:hover,
+  .legals-links button:hover {
+    color: #4CA64C;
+    background-color: #e0f2ff;
+  }
+
+  .legals-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 12px;
+    gap: 8px;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 18px;
+  }
+
+  /* Even smaller social icons for legals on mobile */
+  .social-links.legals-social {
+    gap: 10px;
+  }
+
+  .social-links.legals-social a {
+    font-size: 12px;    /* even smaller on phones */
+    padding: 3px 5px;
+  }
+
+
+  .copyright {
+    font-size: 13px;
+    color: #303030;
+    text-align: left;
+  }
+}
+
